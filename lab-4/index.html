@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Lab 4</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <h1>Lab 4</h1>
-    <a href="..">Powrót</a>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <title>NodeList vs HTMLCollection + Events</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/kanban.js" defer></script>
+</head>
+<body> 
+  <h2>
+    Tablica Kanban<br />
+  </h2>
+
+<div class="all">
+  <div class="space" aria-label="pole z kształtami">   
+    <h1>Do zrobienia</h1>
+    <button class="add" id="b1">Dodaj karte</button>
+    <button class="add" id="bc1">Zmień kolor</button>
+    <button class="add sortAZ" data-board="board1">Sortuj A→Z</button>
+    <button class="add sortDateAsc" data-board="board1">Sortuj po dacie ↑</button>
+    <button class="add sortDateDesc" data-board="board1">Sortuj po dacie ↓</button>
+
+    <h2>Zadania do zrobienia <strong id="toDoCount">0</strong></h2>
+    <div id="board1" class="board">
+    </div>
+  </div>
+
+  <div class="space" aria-label="pole z kształtami">   
+    <h1>W trakcie</h1>
+    <button class="add" id="b2">Dodaj karte</button>
+    <button class="add" id="bc2">Zmień kolor</button><br>
+    <button class="add sortAZ" data-board="board2">Sortuj A→Z</button>
+    <button class="add sortDateAsc" data-board="board2">Sortuj po dacie ↑</button>
+    <button class="add sortDateDesc" data-board="board2">Sortuj po dacie ↓</button>
+
+    <h2>Zadania w trakcie <strong id="doingCount">0</strong></h2>
+    <div id="board2" class="board"></div>
+  </div>
+
+  <div class="space" aria-label="pole z kształtami">   
+    <h1>Zrobione</h1>
+    <button class="add" id="b3">Dodaj karte</button>
+    <button class="add" id="bc3">Zmień kolor</button><br>
+    <button class="add sortAZ" data-board="board3">Sortuj A→Z</button>
+    <button class="add sortDateAsc" data-board="board3">Sortuj po dacie ↑</button>
+    <button class="add sortDateDesc" data-board="board3">Sortuj po dacie ↓</button>
+
+    <h2>Zadania zrobione <strong id="doneCount">0</strong></h2>
+    <div id="board3" class="board"></div>
+  </div>
+  </div>
+
+</body>
 </html>

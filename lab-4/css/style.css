@@ -1,19 +1,102 @@
 /* Minimalny reset  */
-html {
-  font-size: 16px; /* bazowy rozmiar czcionki */
-  font-family: system-ui, sans-serif; /* font systemowy */
-  line-height: 1.5; /* lepsza czytelność */
-}
 body {
-  margin: 1rem;
-  padding: 0;
-}
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: auto;
+    }
+    .controls {
+      margin-bottom: 12px;
+    }
+    button {
+      margin: 4px;
+      padding: 12px;
+      min-width: 150px;
+      cursor: pointer;
+    }
+    .space{
+      margin: auto;
+      width: 550px;
+      max-width: 750px;
+      min-height: 160px;
+      padding: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      background: #fafafa;
+      float: left;
+      text-align: center;
+    }
+    .board {
+      margin: 12px auto;
+      width: 100%;
+      max-width: 750px;
+      min-height: 160px;
+      border: 2px dashed #ccc;
+      padding: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      background: #fafafa;
+    }
+    .shape {
+      width: auto;
+      height: 200px;
+      border: 3px solid black;
 
-a {
-  color: #0066cc; /* niebieski kolor linków */
-  text-decoration: none; /* bez podkreślenia */
-  font-size: 1.4rem;
-}
-a:hover {
-  text-decoration: underline; /* podkreślenie przy najechaniu */
-}
+    }
+    .square {
+      border-radius: 6px;
+    }
+    .add{
+      margin: auto;
+      cursor: pointer;
+      
+    }
+    textarea{
+      resize:none;
+      font-size:larger;
+      border: none;
+      padding: 20px;
+      margin: auto;
+      color: gray;
+      border-radius: 10px;
+    }
+    .delete{
+      height: 20px;
+      width: 20px;
+      cursor: grab;
+      float: left;
+      border: solid black 2px ;
+      border-radius: 20px;
+      background-color: black;
+      color: white;
+    }
+    .delete:hover{
+      transform: scale(1.1);
+    }
+    .arrow{
+      height: 20px;
+      width: 20px;
+      cursor: grab;
+      font-size: larger;
+      margin: auto;
+      float: left;
+      clear: both;
+      border: solid black 2px ;
+      border-radius: 20px;
+      background-color: black;
+      color: white;
+    }
+    .arrow:hover{
+      transform: scale(1.1);
+    }
+    .colorChange{
+      border: solid black 2px ;
+      border-radius: 20px;
+      margin: auto;
+      background-color: black;
+      color: white;
+    }
+    .colorChange:hover{
+      transform: scale(1.1);
+      cursor: grab;
+    }
